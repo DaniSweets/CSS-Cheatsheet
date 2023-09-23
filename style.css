@@ -1,0 +1,54 @@
+header,
+footer {
+    margin: 10px;
+    text-align: center;
+    color: fuchsia;
+}
+
+body {
+    background-image:linear-gradient(black, #222222) ;
+    font-family: arial;
+}
+
+#intro {
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    text-align: center;   
+}
+
+article {
+    border: dashed 2px grey;
+    margin: 5px;
+    width: 33.33%;
+    position: relative;
+    & h2 {
+        background-color: black;
+        outline: solid 2px grey;
+        border-radius: 10%;
+        color: white;
+        display: inline-block;
+        position: absolute;
+        margin-top: -10px;
+        z-index: 1;
+    }
+    & p{
+        color: fuchsia;
+        padding-top: 10%;
+    }
+    & pre {
+        display: block;
+        position: relative;
+        margin: 20px;
+        border-radius: 5px;
+        background-image: linear-gradient(rgb(119, 33, 119), fuchsia);
+        color: white;
+        text-align: justify;
+    }
+}
