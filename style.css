@@ -1,48 +1,55 @@
+:root {
+    --background: linear-gradient(rgb(255, 255, 255),rgb(255, 108, 108));
+    --light: rgb(102, 102, 102);
+    --maincolor: rgb(211, 169, 32);
+    --secondcolor: rgb(128, 8, 128);
+    --thirdcolor: rgb(9, 9, 83);
+}
+
 header,
 footer {
     margin: 10px;
     text-align: center;
-    color: fuchsia;
+    color: var(--thirdcolor);
 }
 
 body {
-    background-image:linear-gradient(black, #222222) ;
+    background-image: var(--background);
     font-family: arial;
 }
-
-#intro {
+nav {
     padding: 5px;
     margin: 5px;
-    color: white;
+    color: var(--light);
 }
 
 section {
-    display: flex;
-    justify-content: space-evenly;
+    /* display: flex;
+    justify-content: space-evenly; */
     margin: 10px;
     text-align: center;   
 }
 
 article {
-    border: dashed 2px grey;
+    /* border: dashed 2px grey; */
     margin: 5px;
-    width: 33.33%;
     position: relative;
+    background-image: var(--background);
     & h2 {
-        background-color: black;
-        outline: solid 2px grey;
+        /* outline: solid 2px var(--light); */
         border-radius: 10%;
-        color: white;
+        color: var(--light);
         display: inline-block;
         position: absolute;
-        margin-top: -10px;
+        /* margin-left: -10%;
+        margin-top: 0; */
         z-index: 1;
     }
     & p{
-        color: fuchsia;
+        color: var(--secondcolor);
         padding-top: 10%;
     }
-    & pre {
+    /* & pre {
         display: block;
         position: relative;
         margin: 20px;
@@ -50,5 +57,5 @@ article {
         background-image: linear-gradient(rgb(119, 33, 119), fuchsia);
         color: white;
         text-align: justify;
-    }
+    } */
 }
