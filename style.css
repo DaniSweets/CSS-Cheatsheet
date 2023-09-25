@@ -24,25 +24,19 @@ nav {
 }
 
 section {
-    /* display: flex;
-    justify-content: space-evenly; */
     margin: 10px;
     text-align: center;   
 }
 
 article {
-    /* border: dashed 2px grey; */
     margin: 5px;
     position: relative;
     background-image: var(--background);
     & h2 {
-        /* outline: solid 2px var(--light); */
         border-radius: 10%;
         color: var(--light);
         display: inline-block;
         position: absolute;
-        /* margin-left: -10%;
-        margin-top: 0; */
         z-index: 1;
     }
     & p{
@@ -58,4 +52,13 @@ article {
         color: white;
         text-align: justify;
     } */
+}
+
+.workItems {
+    display: none;
+}
+
+#workplease:hover .workItems {
+    display: block;
+    background-color: brown;
 }
