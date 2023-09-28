@@ -20,7 +20,11 @@ body {
 nav {
     padding: 5px;
     margin: 5px;
-    color: var(--light);
+    & a {
+        color: var(--light);
+        font-weight: bold;
+        font-size: larger;
+    }
 }
 
 section {
@@ -41,7 +45,7 @@ article {
     }
     & p{
         color: var(--light);
-        padding: 10%;
+        padding-top: 10%;
     }
 }
 
@@ -57,21 +61,34 @@ pre {
 
 article:hover .workItems {
     display: block;
-    background-color: brown;
 }
 
 #Horiseon {
     background: url('./Screenshot 2023-09-23 170838.png');
-    color: white;
-    & a, p {
+    height: 300px;
+    /* color: white;
+    & h2, a, p {
         color: white;
-    }
+    } */
 }
 
 #Prework {
     background: url('./Screenshot 2023-09-28 162925.png');
-    color: blue;
-    & a, p {
+    height: 200px;
+    /* color: blue;
+    & h2, a, p {
         color: blue;
-    }
+    } */
 }
+
+@media (min-width: 500px) {
+    nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            & li {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+        }
+    }
