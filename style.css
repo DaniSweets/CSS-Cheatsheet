@@ -40,12 +40,11 @@ article {
         border-radius: 10%;
         color: var(--light);
         display: inline-block;
-        position: absolute;
         z-index: 1;
     }
     & p{
         color: var(--light);
-        padding-top: 10%;
+        /* padding: 5%; */
     }
 }
 
