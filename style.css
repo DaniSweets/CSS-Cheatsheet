@@ -40,25 +40,38 @@ article {
         z-index: 1;
     }
     & p{
-        color: var(--secondcolor);
-        padding-top: 10%;
+        color: var(--light);
+        padding: 10%;
     }
-    /* & pre {
-        display: block;
-        position: relative;
-        margin: 20px;
-        border-radius: 5px;
-        background-image: linear-gradient(rgb(119, 33, 119), fuchsia);
-        color: white;
-        text-align: justify;
-    } */
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: var(--light);
 }
 
 .workItems {
     display: none;
 }
 
-#workplease:hover .workItems {
+article:hover .workItems {
     display: block;
     background-color: brown;
+}
+
+#Horiseon {
+    background: url('./Screenshot 2023-09-23 170838.png');
+    color: white;
+    & a, p {
+        color: white;
+    }
+}
+
+#Prework {
+    background: url('./Screenshot 2023-09-28 162925.png');
+    color: blue;
+    & a, p {
+        color: blue;
+    }
 }
